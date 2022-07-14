@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import myComponent from './test1.js';
+// import myComponent from './test1';
+import myComponent from './Test2.vue';
 
-const app = createApp(myComponent);
-app.mount('#app');
+createApp(myComponent).mount('#app');
