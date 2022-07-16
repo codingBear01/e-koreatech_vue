@@ -1,9 +1,8 @@
-import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
-import homeComponent from './Home.vue';
-import loginComponent from './Login.vue';
-import detailComponent from './Detail.vue';
+import homeComponent from '../componets/Home.vue';
+import loginComponent from '../componets/Login.vue';
+import detailComponent from '../componets/Detail.vue';
 
 const routes = [
   // 특정 정보가 들어왔을 때 어떤 컴포넌트를 보여줄 것인지 정의
@@ -17,6 +16,4 @@ const router = createRouter({
   routes,
 });
 
-const app = createApp({});
-app.mount('#app');
-app.use(router);
+export default router;
